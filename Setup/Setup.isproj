@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\Avtorentovik\Avtorentovik.csproj">
+			<Name>Avtorentovik</Name>
+			<Project>{42026E26-EFCF-45FB-B99C-E76239C9EA25}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Avtorentovik.Core\Avtorentovik.Core.csproj">
+			<Name>Avtorentovik.Core</Name>
+			<Project>{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Avtorentovik.Updater\Avtorentovik.Updater.csproj">
+			<Name>Avtorentovik.Updater</Name>
+			<Project>{59EBEA61-4F5C-468E-B300-75E32BC6B963}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Avtorentovik.Utils\Avtorentovik.Utils.csproj">
+			<Name>Avtorentovik.Utils</Name>
+			<Project>{B65065C7-6A29-450C-B007-4695395A3B80}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

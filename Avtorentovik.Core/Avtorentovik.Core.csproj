@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Avtorentovik.Core</RootNamespace>
+    <AssemblyName>Avtorentovik.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\ModelOrders.cs" />
+    <Compile Include="Model\ModelCars.cs" />
+    <Compile Include="Model\ModelConnection.cs" />
+    <Compile Include="Model\ModelCarModels.cs" />
+    <Compile Include="Model\ModelClients.cs" />
+    <Compile Include="Model\ModelOrderDamages.cs" />
+    <Compile Include="Model\ModelCarRentals.cs" />
+    <Compile Include="Model\ModelRents.cs" />
+    <Compile Include="Model\ModelMarks.cs" />
+    <Compile Include="Model\ModelDamages.cs" />
+    <Compile Include="Model\ModelProkats.cs" />
+    <Compile Include="Model\ModelOrderServices.cs" />
+    <Compile Include="Model\ModelTemplates.cs" />
+    <Compile Include="Model\ModelServices.cs" />
+    <Compile Include="Model\ModelUsers.cs" />
+    <Compile Include="ORMDataModel1Code\Car.cs" />
+    <Compile Include="ORMDataModel1Code\Car.Designer.cs">
+      <DependentUpon>Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\CarRentals.cs" />
+    <Compile Include="ORMDataModel1Code\CarRentals.Designer.cs">
+      <DependentUpon>CarRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Clients.cs" />
+    <Compile Include="ORMDataModel1Code\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\ConnectionHelper.cs" />
+    <Compile Include="ORMDataModel1Code\Damages.cs" />
+    <Compile Include="ORMDataModel1Code\Damages.Designer.cs">
+      <DependentUpon>Damages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Marks.cs" />
+    <Compile Include="ORMDataModel1Code\Marks.Designer.cs">
+      <DependentUpon>Marks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Models.cs" />
+    <Compile Include="ORMDataModel1Code\Models.Designer.cs">
+      <DependentUpon>Models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\OrderDamages.cs" />
+    <Compile Include="ORMDataModel1Code\OrderDamages.Designer.cs">
+      <DependentUpon>OrderDamages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Orders.cs" />
+    <Compile Include="ORMDataModel1Code\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\OrderServices.cs" />
+    <Compile Include="ORMDataModel1Code\OrderServices.Designer.cs">
+      <DependentUpon>OrderServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Prokats.cs" />
+    <Compile Include="ORMDataModel1Code\Prokats.Designer.cs">
+      <DependentUpon>Prokats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Rents.cs" />
+    <Compile Include="ORMDataModel1Code\Rents.Designer.cs">
+      <DependentUpon>Rents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Services.cs" />
+    <Compile Include="ORMDataModel1Code\Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Template.cs" />
+    <Compile Include="ORMDataModel1Code\Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Users.cs" />
+    <Compile Include="ORMDataModel1Code\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ORMDataModel1.xpo" />
+    <None Include="ORMDataModel1.xpo.diagram">
+      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avtorentovik.Utils\Avtorentovik.Utils.csproj">
+      <Project>{b65065c7-6a29-450c-b007-4695395a3b80}</Project>
+      <Name>Avtorentovik.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cmd /c mkdir "$(TargetDir)..\..\..\configs"
+cmd /c copy "$(TargetPath).config" "$(TargetDir)..\..\..\configs\$(TargetFileName).config"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

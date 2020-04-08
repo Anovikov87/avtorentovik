@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avtorentovik", "Avtorentovik\Avtorentovik.csproj", "{42026E26-EFCF-45FB-B99C-E76239C9EA25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avtorentovik.Core", "Avtorentovik.Core\Avtorentovik.Core.csproj", "{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avtorentovik.Utils", "Avtorentovik.Utils\Avtorentovik.Utils.csproj", "{B65065C7-6A29-450C-B007-4695395A3B80}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{6093E949-2AB7-4787-B617-DE066C10BC4C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25} = {42026E26-EFCF-45FB-B99C-E76239C9EA25}
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963} = {59EBEA61-4F5C-468E-B300-75E32BC6B963}
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3} = {3164B3AE-61C3-444F-AE8D-5B747FFC76B3}
+		{B65065C7-6A29-450C-B007-4695395A3B80} = {B65065C7-6A29-450C-B007-4695395A3B80}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avtorentovik.Updater", "Avtorentovik.Updater\Avtorentovik.Updater.csproj", "{59EBEA61-4F5C-468E-B300-75E32BC6B963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{42026E26-EFCF-45FB-B99C-E76239C9EA25}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{3164B3AE-61C3-444F-AE8D-5B747FFC76B3}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{B65065C7-6A29-450C-B007-4695395A3B80}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.Debug|Any CPU.ActiveCfg = DVD-5
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.Debug|Any CPU.Build.0 = DVD-5
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.DVD-5|Any CPU.Build.0 = DVD-5
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.Release|Any CPU.ActiveCfg = SingleImage
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.Release|Any CPU.Build.0 = SingleImage
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{6093E949-2AB7-4787-B617-DE066C10BC4C}.SingleImage|Any CPU.Build.0 = SingleImage
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{59EBEA61-4F5C-468E-B300-75E32BC6B963}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://evva.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Avtorentovik\\Avtorentovik.csproj
+		SccProjectName1 = Avtorentovik
+		SccLocalPath1 = Avtorentovik
+		SccProjectUniqueName2 = Avtorentovik.Core\\Avtorentovik.Core.csproj
+		SccProjectName2 = Avtorentovik.Core
+		SccLocalPath2 = Avtorentovik.Core
+		SccProjectUniqueName3 = Avtorentovik.Utils\\Avtorentovik.Utils.csproj
+		SccProjectName3 = Avtorentovik.Utils
+		SccLocalPath3 = Avtorentovik.Utils
+		SccProjectUniqueName4 = Setup\\Setup.isproj
+		SccProjectName4 = Setup
+		SccLocalPath4 = Setup
+		SccProjectUniqueName5 = Avtorentovik.Updater\\Avtorentovik.Updater.csproj
+		SccProjectName5 = Avtorentovik.Updater
+		SccLocalPath5 = Avtorentovik.Updater
+	EndGlobalSection
+EndGlobal
